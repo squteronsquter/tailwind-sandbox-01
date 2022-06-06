@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Container & Spacing</title>
-  </head>
-  <body>
-    <!-- Container -->
-    <div>
-      <article>
-        <h3>Article One</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem laboriosam libero molestiae recusandae accusantium
-          voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
-          sunt, maiores quasi. Modi amet quos dolores!
-        </p>
-      </article>
 
-      <!-- Margin -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Container & Spacing</title>
+</head>
 
-      <!-- Padding -->
+<body>
+  <!-- Container -->
+  <div class="container mx-auto">
+    <article class="bg-red-100">
+      <h3>Article One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem laboriosam libero molestiae recusandae accusantium
+        voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
+        sunt, maiores quasi. Modi amet quos dolores!
+      </p>
+    </article>
 
-      <!-- Space Between X -->
+    <!-- Margin -->
 
-      <!-- Space Between Y -->
+    <div class="bg-slate-200 m-4">Hello Paragraph</div>
+    <div class="bg-slate-200 my-4 ml-8">Hello Paragraph</div>
+    <div class="bg-slate-200 my-4 mr-8">Hello Paragraph</div>
+
+    <!-- Padding -->
+    <div class="bg-slate-200 p-16">Hello Paragraph</div>
+    <div class="bg-slate-200 my-4 px-16">Hello Paragraph</div>
+    <div class="bg-slate-200 my-4 py-16">Hello Paragraph</div>
+
+
+    <!-- Space Between X -->
+    <div class="flex mt-12 space-x-6">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
     </div>
-  </body>
+
+
+    <!-- Space Between Y -->
+
+    <div class="flex flex-col mt-12 space-y-8">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <!-- Breakpoinsts for Container 
