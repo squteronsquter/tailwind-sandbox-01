@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
 
-    <!-- Top left corner -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS Positioning</title>
+</head>
 
-    <!-- Top right corner -->
+<body>
+  <div class="relative bg-red-500 w-1/2 text-white p-48 m-4">Parent element
+    <div class="bg-red-200 absolute bottom-0 right-0 p-8 text-slate-900">Position absolute bottom right</div>
+  </div>
+  <div class="relative bg-red-500 w-1/2 text-white p-48 m-4">Parent element
+    <div class="bg-red-200 absolute bottom-0 left-0 p-8 text-slate-900">Position absolute bottom left</div>
+  </div>
+  <div class="relative bg-red-500 w-1/2 text-white p-48 m-4">Parent element
+    <div class="bg-red-200 absolute top-0 left-0 p-8 text-slate-900">Position absolute top left</div>
+  </div>
+  <div class="relative bg-red-500 w-1/2 text-white p-48 m-4">Parent element
+    <div class="bg-red-200 absolute top-0 right-0 p-8 text-slate-900">Position absolute top right</div>
+  </div>
+  <div class="relative bg-blue-500 w-1/2 h-[400px] m-4">
+    <div class="absolute bg-blue-300 text-white p-8 w-1/2 right-0 top-0">Position absolute</div>
+  </div>
+  <div class="relative bg-blue-500 w-1/2 h-[400px] m-4">
+    <div class="absolute bg-blue-300 text-white p-8 w-1/2 right-0 bottom-0">Position absolute</div>
+  </div>
+  <div class="relative bg-blue-500 w-1/2 h-[400px] m-4">
+    <div class="absolute bg-blue-300 text-white p-8 w-1/2 left-0 top-0">Position absolute</div>
+  </div>
+  <div class="relative bg-blue-500 w-1/2 h-[400px] m-4">
+    <div class="absolute bg-blue-300 text-white p-8 w-1/2 left-0 bottom-0">Position absolute</div>
+  </div>
+  <div class="relative bg-blue-500 w-1/2 h-[400px] m-4">
+    <div class="bg-blue-300 p-8 text-white text-3xl absolute inset-x-0 top-0 h-24">Position absolute</div>
+  </div>
+</body>
 
-    <!-- Bottom left corner -->
-
-    <!-- Bottom right corner -->
-
-    <!-- Span top edge -->
-
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
-  </body>
 </html>
 
 <!-- Position Classes
