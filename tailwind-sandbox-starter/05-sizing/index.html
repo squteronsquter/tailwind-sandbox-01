@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sizing</title>
-  </head>
-  <body>
-    <!-- Width -->
 
-    <!-- Percentages -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sizing</title>
+</head>
 
-    <!-- Width of the viewport -->
+<body>
 
-    <!-- 100% of container -->
+  <section class="bg-slate-200 flex flex-col justify-center items-center w-3/4 m-auto h-screen">
+    <div class="bg-slate-100 text-slate-900 w-0">Hello 01</div>
+    <div class="bg-slate-100 text-slate-900 w-8">Hello 02</div>
+    <div class="bg-slate-100 text-slate-900 w-12">Hello 03</div>
+    <div class="bg-slate-100 text-slate-900 w-48">Hello 04</div>
+    <div class="bg-slate-100 text-slate-900 w-96">Hello 05</div>
+  </section>
 
-    <!-- min/max content -->
 
-    <!-- Arbitrary width -->
+  <section class="bg-slate-200 flex flex-col justify-center items-center w-1/2 m-auto h-screen">
+    <div class="bg-green-500 text-slate-900 w-full">Hello 01</div>
+    <div class="bg-green-500 text-slate-900 w-1/2">Hello 02</div>
+    <div class="bg-green-500 text-slate-900 w-1/4">Hello 03</div>
+  </section>
+  <div class="flex space-x-8 mt-8 mb-8">
+    <section class="bg-slate-200 flex flex-col justify-start items-start p-8 w-1/4 m-auto h-1/2">
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/">Hello 01</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/2">Hello 02</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/4">Hello 03</div>
+    </section>
+    <section class="bg-slate-200 flex flex-col justify-start items-start p-8 w-1/4 m-auto h-1/2">
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/">Hello 01</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/2">Hello 02</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/4">Hello 03</div>
+    </section>
+    <section class="bg-slate-200 flex flex-col justify-start items-start p-8 w-1/4 m-auto h-1/2">
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/">Hello 01</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/2">Hello 02</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/4">Hello 03</div>
+    </section>
+    <section class="bg-slate-200 flex flex-col justify-start items-start p-8 w-1/4 m-auto h-1/2">
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/">Hello 01</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/2">Hello 02</div>
+      <div class="bg-fuchsia-500  p-8 text-slate-100 font-bold font-extralight text-2xl w-1/4">Hello 03</div>
+    </section>
+  </div>
 
-    <!-- Max Width -->
 
-    <!-- Height (Most of the same options as widths) -->
+  <section class="bg-slate-800 flex flex-col w-full p-8 m-auto h-1/2">
+    <div class="text-slate-200">Hello 01</div>
+    <div class="text-slate-200">Hello 02</div>
+    <div class="text-slate-200">Hello 03</div>
+  </section>
 
-    <!-- Min Height -->
+  <section class="bg-slate-800 flex flex-col p-8 w-3/4 m-auto h-1/2">
+    <div class="text-slate-200">Hello 01</div>
+    <div class="text-slate-200">Hello 02</div>
+    <div class="text-slate-200">Hello 03</div>
+  </section>
 
-    <!-- Max Height -->
+  <section class="bg-slate-800 flex flex-col p-8 w-1/2 m-auto h-1/2">
+    <div class="text-slate-200">Hello 01</div>
+    <div class="text-slate-200">Hello 02</div>
+    <div class="text-slate-200">Hello 03</div>
+  </section>
 
-    <!-- Full screen height -->
-  </body>
+  <section class="bg-yellow-500 flex flex-col p-8 w-[600px] m-auto h-1/2">
+    <div class="text-slate-200">Hello 600px</div>
+    <div class="text-slate-200">Hello 600px</div>
+    <div class="text-slate-200">Hello 600px</div>
+  </section>
+  <section class="bg-yellow-400 flex flex-col p-8 w-[700px] m-auto h-1/2">
+    <div class="text-slate-800">Hello 600px</div>
+    <div class="text-slate-800">Hello 600px</div>
+    <div class="text-slate-800">Hello 600px</div>
+  </section>
+  <section class="bg-yellow-300 flex flex-col p-8 max-w-sm m-auto h-1/2">
+    <div class="text-slate-800">Hello max-width small</div>
+    <div class="text-slate-800">Hello max-width small</div>
+    <div class="text-slate-800">Hello max-width small</div>
+  </section>
+  <section class="bg-yellow-600 flex flex-col p-8 max-w-lg m-auto h-1/2">
+    <div class="text-slate-800">Hello max-width large</div>
+    <div class="text-slate-800">Hello max-width large</div>
+    <div class="text-slate-800">Hello max-width large</div>
+  </section>
+  <section class="bg-yellow-900 flex flex-col p-8 max-w-xl m-auto h-1/2">
+    <div class="text-slate-100">Hello max-width extra-large</div>
+    <div class="text-slate-100">Hello max-width extra-large</div>
+    <div class="text-slate-100">Hello max-width extra-large</div>
+  </section>
+
+  <section class="bg-yellow-300 flex p-8 w-full m-auto h-screen space-x-8">
+    <div class="bg-blue-500 p-8 text-slate-200 h-full">Heights</div>
+    <div class="bg-blue-500 p-8 text-slate-200 h-1/2">Heights</div>
+    <div class="bg-blue-500 p-8 text-slate-200 h-[200px]">Heights</div>
+    <div class="bg-blue-500 px-8 pt-2 text-slate-200 h-16">Heights</div>
+    <div class="bg-blue-500 px-8 pt-2 text-slate-200 h-28">Heights</div>
+  </section>
+
+</body>
+
 </html>
 
 <!-- 
